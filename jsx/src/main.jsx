@@ -10,11 +10,15 @@ const root = ReactDOM.createRoot(el);
 
 //4) Create a component
 function App() {
-  let message = "Bye there!";
-  if (Math.random() > 0.5) {
-    message = "hello there!";
-  }
-  return <h1>{message}</h1>;
+  return (
+    <div className="wrapper">
+      <textarea
+        maxLength={3}
+        spellCheck
+        style={{backgroundColor: "gray"}}
+      />
+    </div>
+  )
 }
 
 //5) Show the component on the screen
